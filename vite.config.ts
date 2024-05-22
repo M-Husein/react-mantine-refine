@@ -4,11 +4,13 @@ import react from "@vitejs/plugin-react-swc";
 // import { ViteMinifyPlugin } from 'vite-plugin-minify';
 // import { VitePWA } from 'vite-plugin-pwa';
 // import mkcert from 'vite-plugin-mkcert';
+// import tsconfigPaths from 'vite-tsconfig-paths'; // Mantine
 import * as path from 'path';
 
 export default defineConfig({
   plugins: [
     react(),
+    // tsconfigPaths(), // Mantine
     // mkcert(),
 
     // VitePWA({
