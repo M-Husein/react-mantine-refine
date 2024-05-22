@@ -1,6 +1,6 @@
 import { Authenticated, ErrorComponent, Refine } from "@refinedev/core";
-import { DevtoolsPanel, DevtoolsProvider } from "@refinedev/devtools";
-import { RefineKbar, RefineKbarProvider } from "@refinedev/kbar";
+// import { DevtoolsPanel, DevtoolsProvider } from "@refinedev/devtools";
+// import { RefineKbar, RefineKbarProvider } from "@refinedev/kbar";
 
 import routerBindings, {
   CatchAllNavigate,
@@ -21,8 +21,8 @@ import { Register } from "./pages/register";
 export default function App(){
   return (
     <BrowserRouter>
-      <RefineKbarProvider>
-        <DevtoolsProvider>
+      {/* <RefineKbarProvider> */}
+        {/* <DevtoolsProvider> */}
           <Refine
             dataProvider={dataProvider("https://api.fake-rest.refine.dev")}
             routerProvider={routerBindings}
@@ -141,14 +141,15 @@ export default function App(){
               </Route>
             </Routes>
 
-            <RefineKbar />
+            {/* <RefineKbar /> */}
+
             <UnsavedChangesNotifier />
             <DocumentTitleHandler />
           </Refine>
-          
-          <DevtoolsPanel />
-        </DevtoolsProvider>
-      </RefineKbarProvider>
+
+          {/* <DevtoolsPanel />
+        </DevtoolsProvider> */}
+      {/* </RefineKbarProvider> */}
     </BrowserRouter>
   );
 }
